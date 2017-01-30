@@ -34,6 +34,9 @@ class ViewController: NSViewController {
         //select initial selection
         popUpList.selectItem(at: 0)
         
+        //trigger the action method
+        popUpListChanged(self)
+        
         //choose a radio state
         radio1.state =  NSOnState
         
@@ -53,6 +56,21 @@ class ViewController: NSViewController {
     }
     
     @IBAction func popUpListChanged(_ sender: Any) {
+        switch popUpList.indexOfSelectedItem {
+        case 0:
+            radio1.title = "to Inches"
+            radio1.title = "to Centimeters"
+        case 1:
+            radio1.title = "to Pounds"
+            radio1.title = "to Kilograms"
+            
+        case 2:
+            radio1.title = "to Celsius"
+            radio1.title = "to Farenheit"
+            
+        default:
+            break
+        }
     }
     
     @IBAction func txtValueChanged(_ sender: Any) {
