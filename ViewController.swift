@@ -38,5 +38,9 @@ class ViewController: NSViewController {
     
     @IBAction func popUpListChanged(_ sender: Any) {
     }
+    
+    @IBAction func txtValueChanged(_ sender: Any) {
+    }
+    
 }
 
