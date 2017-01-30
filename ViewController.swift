@@ -59,14 +59,14 @@ class ViewController: NSViewController {
         switch popUpList.indexOfSelectedItem {
         case 0:
             radio1.title = "to Inches"
-            radio1.title = "to Centimeters"
+            radio2.title = "to Centimeters"
         case 1:
             radio1.title = "to Pounds"
-            radio1.title = "to Kilograms"
+            radio2.title = "to Kilograms"
             
         case 2:
             radio1.title = "to Celsius"
-            radio1.title = "to Farenheit"
+            radio2.title = "to Farenheit"
             
         default:
             break
