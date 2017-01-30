@@ -33,5 +33,8 @@ class ViewController: NSViewController {
     }
 
 
+    @IBAction func radioChanged(_ sender: Any) {
+        
+    }
 }
 
