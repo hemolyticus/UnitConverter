@@ -33,8 +33,10 @@ class ViewController: NSViewController {
     }
 
 
-    @IBAction func radioChanged(_ sender: Any) {
-        
+    @IBAction func radioChanged(_ sender: NSButton) {
+    }
+    
+    @IBAction func popUpListChanged(_ sender: Any) {
     }
 }
 
