@@ -74,7 +74,35 @@ class ViewController: NSViewController {
     }
     
     @IBAction func txtValueChanged(_ sender: Any) {
+        switch popUpList.indexOfSelectedItem {
+        case 0:
+            if radio1.state == NSOnState {
+                txtResult.stringValue = String(format: "%.2f", txtValue.doubleValue / 2.51)
+            }else{
+                txtResult.stringValue = String(format: "%.2f", txtValue.doubleValue * 2.51)
+            }
+            
+        case 1:
+            if radio1.state == NSOnState {
+                txtResult.stringValue = String(format: "%.2f", txtValue.doubleValue * 2.2)
+            }else{
+                txtResult.stringValue = String(format: "%.2f", txtValue.doubleValue / 2.2)
+            }
+            
+        case 2:
+            if radio1.state == NSOnState {
+                txtResult.stringValue = String(format: "%.2f", (txtValue.doubleValue - 32 ) * 5/9)
+            }else{
+                txtResult.stringValue = String(format: "%.2f", txtValue.doubleValue * 9/5 + 32)
+            }
+            
+        default:
+            break
+            
+        
+            
+        
+        }
     }
-    
 }
 
