@@ -764,6 +764,13 @@
                             </popUpButton>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="popUpList" destination="PTN-PW-eD2" id="u8I-mw-jRq"/>
+                        <outlet property="radio1" destination="Eqn-2r-0ds" id="rQY-WY-RNe"/>
+                        <outlet property="radio2" destination="yt0-wq-vLX" id="5Pm-x7-Khh"/>
+                        <outlet property="txtResult" destination="eOd-hI-Pse" id="1NI-1X-JpI"/>
+                        <outlet property="txtValue" destination="cPD-e9-1OM" id="EGj-a7-T3f"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
