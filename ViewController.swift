@@ -22,6 +22,22 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //remove contents of popuplist
+        popUpList.removeAllItems()
+        
+        //add items to popuplist
+        popUpList.addItem(withTitle: "Inches and Centimeters")
+        popUpList.addItem(withTitle: "Pounds and Kilograms")
+        popUpList.addItem(withTitle: "Celsius and Farenheit")
+        
+        //select initial selection
+        popUpList.selectItem(at: 0)
+        
+        //choose a radio state
+        radio1.state =  NSOnState
+        
+        
 
         // Do any additional setup after loading the view.
     }
